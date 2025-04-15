@@ -6,8 +6,8 @@ public class Main1 {
 		for(int i=1 ; i<=5 ; i++) {
 			if(i==3) {
 //				continue;		//skip the current time of the loop ,directly continue the next time
-//				break;			//end the loop
-				return;			//end the program
+				break;			//end the loop
+//				return;			//end the program
 			}
 			System.out.println(i);
 		}
