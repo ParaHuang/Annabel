@@ -7,7 +7,7 @@ public class Hero {
 	private String name;
 	private int life;
 	private int power;
-	private String attactSkill;
+	private String attackSkill;
 	private String defendSkill;
 	
 	//name = "jack";	-> set up a value			-> setter	-> 	setName
@@ -28,19 +28,39 @@ public class Hero {
 		power = p;
 	}
 	//alt+/ -> show a hint
-	public void setAttactSkill(String attactSkill) {
+	public void setAttackSkill(String attackSkill) {
 		//this->current object
 		//when the parameter is as the same name as field
 		//use this.name refers the field
-		this.attactSkill = attactSkill;
+		this.attackSkill = attackSkill;
 	}
 	
 	public void setDefendSkill(String defendSkill) {
 		this.defendSkill = defendSkill;
 	}
- 
+	
+	public String getName(){
+		return name;
+	}
+	
+	public int getLife() {
+		return life;
+	}
+	
+	public int getPower() {
+		return power;
+	}
+	
+	public String getAttackSkill() {
+		return attackSkill;
+	}
+	
+	public String getDefendSkill() {
+		return defendSkill;
+	}
+	
 	public void attactEnemy() {
-		System.out.println(attactSkill + " hits the enemy for " + power + " damage.");
+		System.out.println(attackSkill + " hits the enemy for " + power + " damage.");
 	}
 
 	public void defendEnemy() {

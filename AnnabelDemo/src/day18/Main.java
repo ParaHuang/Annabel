@@ -11,7 +11,7 @@ public class Main {
 //		h1.power = 240;
 		h1.setPower(240);
 //		h1.attactSkill = "spider net";
-		h1.setAttactSkill("spider net");
+		h1.setAttackSkill("spider net");
 //		h1.defendSkill = "shield";
 		h1.setDefendSkill("shield");
 		
@@ -25,11 +25,32 @@ public class Main {
 		h2.setName("Dr Strange");		//
 		h2.setLife(500);
 		h2.setPower(300);
-		h2.setAttactSkill("magic");
+		h2.setAttackSkill("magic");
 		h2.setDefendSkill("cape");
 		
 		h2.attactEnemy();
 		h2.defendEnemy();
+
+//		System.out.println("the name of second hero is "+h2.getName());
+//		System.out.println("the life point of second hero is "+h2.getLife());
+//		System.out.println("the power point of second hero is "+h2.getPower());
+//		System.out.println("the attact skill of second hero is "+h2.getAttackSkill());
+//		System.out.println("the defend skill of second hero is "+h2.getDefendSkill());
+		
+		//escaping character
+		//	\n	->	new line
+		
+		//placeholder
+		//%s->String		%d->int
+		//print with a format(without changing line)
+		System.out.printf("the name of second hero is %s\n",h2.getName());
+		System.out.printf("the life point of second hero is %d\n",h2.getLife());
+		System.out.printf("the power point of second hero is %d\n",h2.getPower());
+		System.out.printf("the attack skill of second hero is %s\n",h2.getAttackSkill());
+		System.out.printf("the defend skill of second hero is %s\n",h2.getDefendSkill());
+//		System.out.print();		//print without changing line
+//		System.out.println();//print a line
+		
 	}
 
 }
