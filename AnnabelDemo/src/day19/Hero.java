@@ -1,19 +1,29 @@
 package day19;
 
 public class Hero {
+	//fields--global variables
 	private String name;
 	private int life;
 	private int power;
 	private String attackSkill;
 	private String defendSkill;
+
+	public Hero() {
+		System.out.println("empty constructor");
+	}
 	
-	public Hero(String n,int l,int p,String a,String d) {
-		System.out.println("this is the constructor of Hero");
-		name = n;
-		life =l;
-		power = p;
-		attackSkill = a;
-		defendSkill = d;
+	public Hero(String name) {
+		this.name = name;
+	}
+	
+	//				parameters--local variables
+	public Hero(String name, int life, int power, String attackSkill, String defendSkill) {
+		//when local variable is in the same name as global variable, then we use this.  to refers the global one
+		this.name = name;
+		this.life = life;
+		this.power = power;
+		this.attackSkill = attackSkill;
+		this.defendSkill = defendSkill;
 	}
 	
 	public String getName() {
@@ -69,6 +79,18 @@ public class Hero {
 	public String toString() {
 		return "Hero [name=" + name + ", life=" + life + ", power=" + power + ", attackSkill=" + attackSkill
 				+ ", defendSkill=" + defendSkill + "]";
+	}
+	
+	public void method1() {
+		System.out.println("calling method1");
+	}
+	
+	public void method1(int x) {
+		System.out.printf("---------method1 with 1 int parameter:%d-----------\n",x);
+	}
+	
+	public void method2() {
+		System.out.println("calling method2");
 	}
 	
 }

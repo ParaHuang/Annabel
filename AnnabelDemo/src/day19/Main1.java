@@ -18,6 +18,18 @@ public class Main1 {
 		
 //		String str = h2.toString();
 		System.out.println(h2);
+		h2.method1();
+		h2.method1(4);
+		h2.method2();
+		
+		System.out.println();
+		Hero h3 = new Hero();
+		h3.setName("Holk");
+		
+		System.out.println();
+		Hero h4 = new Hero("Thor");
+		h4.defendEnemy();
+		
 	}
 
 }
