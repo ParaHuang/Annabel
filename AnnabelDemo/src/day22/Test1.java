@@ -26,7 +26,7 @@ public class Test1 {
 		//add value
 		list.add(12);
 		list.add(99);
-		list.add(34);
+		list.add("hello");
 		list.add(10);
 		list.add(78);
 		
