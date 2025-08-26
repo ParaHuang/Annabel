@@ -4,10 +4,13 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -67,7 +70,38 @@ public class LoginFrame extends JFrame{
 		JPasswordField passwordBox = new JPasswordField();
 		passwordBox.setBounds(190, 203, 240, 45);
 		passwordBox.setFont(contentFont);
-		contentPane.add(passwordBox);
+		contentPane.add(passwordBox);	
+		
+		//account->admin, password->123			login successfully
+		//invalid account or password
+		//when you click on a button, it intriguer something -> ActionListener
+		
+		//keep listening on action	->	click
+		loginBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// whatever you want to do when you click the button, you define it here
+				// 1.get the text we inputed inside of text box
+				String account = accountBox.getText();
+				String password = passwordBox.getText();
+//				System.out.println(account+"---"+password);
+				// 2.compare them with admin,123
+				if("admin".equals(account) && "123".equals(password)) {
+					// 3.solution
+//					System.out.println("login successfully");
+//					JOptionPane.showMessageDialog(LoginFrame.this, "Login Successfully");
+					//open MainFrame
+					ColorFrame frame = new ColorFrame();
+					frame.setVisible(true);
+					dispose();		//close the current windowm
+				}else {
+					JOptionPane.showMessageDialog(LoginFrame.this, "invalid account or password");
+				}
+			}
+		} );
+		
+		
 		
 	}
 }
