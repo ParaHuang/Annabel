@@ -1,0 +1,26 @@
+-----------9.13
+	project			->		human
+HTML:hypertext marked language 			skeleton	
+CSS:Cascading style sheet			muscle, skin, fat	
+JavaScript：make web page live			brain，nervous system
+
+1.what it mark?
+Mark/label/tag/element
+It's a certain to declare component in web page
+<name attribute="value"/>			single tag
+<name attribute1="value1" attribute2="value2"></name>		pair tag
+
+2.basic code of html
+<html>
+	<head></head>
+	<body>
+		inside of body, write whatever you want to show in this page
+	</body>
+</html>
+
+3. common tag
+<br/>			break, change a line
+<h1></h1>		first level title,other titles: h1~h6
+<p><p>			paragraph
+<font></font>	set up the font family，size,color for text
+
