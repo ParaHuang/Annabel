@@ -23,4 +23,6 @@ It's a certain to declare component in web page
 <h1></h1>		first level title,other titles: h1~h6
 <p><p>			paragraph
 <font></font>	set up the font family，size,color for text
-
+<ul></ul>    	unordered list, use <li></li> to put list item inside
+<ol></ol>		ordered list
+<img/>			image,use src attribute to set up the path of picture
