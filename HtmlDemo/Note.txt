@@ -26,4 +26,22 @@ It's a certain to declare component in web page
 <ul></ul>    	unordered list, use <li></li> to put list item inside
 <ol></ol>		ordered list
 <img/>			image,use src attribute to set up the path of picture
-<a></a>			link,use href attribute to set other page
+<a></a>			link,use href attribute to link a page
+<table><table>
+
+4.form
+<form action="where to submit">
+	form nodes
+
+	<button>submit</button>
+</form>
+
+different form element 
+(1)input element
+<input type="????"/>
+type--text,password,number,date,email,radio,checkbox
+
+(2)textarea element
+
+
+(3)select element

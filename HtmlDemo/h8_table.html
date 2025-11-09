@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    table
+    thead:table head
+    tbody:table body
+    tr:table row
+    th:table heading, header is for title,the text inside is bold,align center
+    td:table data
+    -->
+    <!-- 
+        cellpadding:inner space for the grid
+        cellspacing:outer space between 2 grids
+    -->
+    <table border="1" align="center" cellpadding="20" cellspacing="0">
+        <!-- the head of table,usually it's for title area -->
+        <thead>
+            <tr>
+                <!-- colspan:column span -->
+                 <th colspan="5">Students Information</th>
+                <!-- <td colspan="4" align="center">Students Information</td> -->
+            </tr>
+            <tr>
+                <th>Class</th>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+
+        <!-- the body of table,ususally it's for data area -->
+        <tbody>
+            <tr>
+                <td rowspan="2">A9</td>
+                <td>1001</td>
+                <td>Jack</td>
+                <td>18</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <!-- <td>A9</td> -->
+                <td>1002</td>
+                <td>Tom</td>
+                <td>19</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>A11</td>
+                <td>1003</td>
+                <td>Lucy</td>
+                <td>18</td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>A11</td>
+                <td>1004</td>
+                <td>Linda</td>
+                <td>18</td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>A11</td>
+                <td>1005</td>
+                <td>Jimmy</td>
+                <td>18</td>
+                <td>male</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
