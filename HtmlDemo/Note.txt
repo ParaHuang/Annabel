@@ -69,6 +69,7 @@ font-weight:bold;				/*set the weight*/
 color:red;						/*set the color of font, the value can be an English word repsent color, or a hexadecimal number(#ff00ff)*/
 line-height:30px;				/*set up the height of every line, we can constrol space between each 2 lines with this */
 overflow:hidden;				/*set up the solution to deal with overflow text,values we can choose:hidden/scroll*/
+text-align:center;				/*set up the align way of content,values are left or center or right*/
 
 2.style of background
 background-color	->	set up the background color,, the value can be an English word repsent color, or a hexadecimal number(#ff00ff)
@@ -84,3 +85,22 @@ background-repeat	->	value:
 							1)no-repeat
 							2)repeat, the default way
 							3)repeat-x, repeat-y					
+
+3.the style of size
+width:800px;		->	set up the width of an element
+height:800px;		->	set up the height of an element
+padding:50px;		->	set up the inner space (the distance between content and edge)
+						the value is only 1 number, then the up,down,left,right distance are all as this number
+						the value are 2 numbers, the first number is for up,down distance, the 2rd number is for left,right distance
+						the value are 3 numbers, the first number is for up distance,the 2nd number is for left,right distance, the last one is for bottom
+						the value are 4 numbers, 1st->up, 2nd->right, 3rd->bottom, 4th->left (clockwise)
+border:30px solid cyan;	->	set up a border with width,style and color, the order of values doesn't matter
+border-width:30px;		->	just set up border width
+border-style:solid;		->	just set up border style,the default value is none. if you want to see a border, at least include border-width and border-style
+border-color:cyan;		->	just set up border color
+margin:30px;			->	set up the outer space(other stuff has to keep away from box by a certain value)
+							the value is only 1 number, then the up,down,left,right outer distance are all as this number
+							the value are 2 numbers, the first number is for up,down distance, the 2rd number is for left,right distance
+							if 2 numbers are like  30px auto   , then it set up element as up、down space are 30px, but the elemnt is in the center horizontally
+							the value are 3 numbers, the first number is for up distance,the 2nd number is for left,right distance, the last one is for bottom
+							the value are 4 numbers, 1st->up, 2nd->right, 3rd->bottom, 4th->left (clockwise)
