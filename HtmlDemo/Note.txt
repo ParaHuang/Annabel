@@ -101,6 +101,10 @@ border-color:cyan;		->	just set up border color
 margin:30px;			->	set up the outer space(other stuff has to keep away from box by a certain value)
 							the value is only 1 number, then the up,down,left,right outer distance are all as this number
 							the value are 2 numbers, the first number is for up,down distance, the 2rd number is for left,right distance
-							if 2 numbers are like  30px auto   , then it set up element as up、down space are 30px, but the elemnt is in the center horizontally
+							if 2 numbers are like    30px auto   , then it set up element as up、down space are 30px, but the elemnt is in the center horizontally
 							the value are 3 numbers, the first number is for up distance,the 2nd number is for left,right distance, the last one is for bottom
 							the value are 4 numbers, 1st->up, 2nd->right, 3rd->bottom, 4th->left (clockwise)
+
+4.others
+border-radius:10px		->	set up a round corner
+box-shadow:offset-x offset-y [blur spread] color inset;
