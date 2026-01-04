@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* declare: all the div would have green text and yellow background */
+        div{
+            color: green;
+            background: yellow;
+        }
+        /* declare: all the h1 would have red dashed 5px border */
+        h1{
+            border: red dashed 5px;
+        }
+
+        button{
+            background: orange;
+            color: white;
+            font-size: 30px;
+            border: none;
+        }
+
+        .corner{
+            border-radius: 10px;
+        }
+
+        .innerSpace{
+            padding: 30px 20px;
+        }
+
+        #pinkBg{
+            background: pink;
+        }
+
+        .centerText{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="innerSpace centerText">text1:green text,yellow background,20px horizontal inner space,30px vertical  inner space,text align center</div><br/>
+    <div class="centerText">text2:green text,yellow background,text align center</div><br/>
+    <div class="corner centerText">text3:green text,yellow background,round corner,text align center</div><br/>
+    <div class="corner">text4:green text,yellow background,round corner</div><br/>
+    <h1 id="pinkBg">title1:red dashed 5px border,pink background</h1>
+    <h1 class="innerSpace">title2:red dashed 5px border,20px horizontal inner space,30px vertical  inner space</h1>
+    <h1 class="corner centerText">title3:red dashed 5px border,round corner,text align center</h1>
+    <button class="innerSpace">button1:orange background, white text,30px,no border,20px horizontal inner space,30px vertical  inner space</button>
+    <button class="corner">button2:orange background, white text,30px,no border,round corner</button>
+    <button class="corner innerSpace">button3:orange background, white text,30px,no border,round corner,20px horizontal inner space,30px vertical  inner space</button>
+</body>
+</html>

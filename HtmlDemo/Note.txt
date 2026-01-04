@@ -55,6 +55,7 @@ type--text(default),password,number,date,email,radio,checkbox,submit,reset,file
 1.how to write CSS(canscading style sheet)
 a.inline style sheet
 <lable style="name1:value1;name2:value2"></lable>
+b.inner style
 
 
 
@@ -108,3 +109,33 @@ margin:30px;			->	set up the outer space(other stuff has to keep away from box b
 4.others
 border-radius:10px		->	set up a round corner
 box-shadow:offset-x offset-y [blur spread] color inset;
+
+1/2===================
+inner style
+1.inside of head lable, add <style></style>
+2.add code inside of style lable
+3.use selector to bind style to some certian elements
+selector{
+	style1:value1;
+	style2:value2;
+	style3:value3;
+}
+
+(1).tag selector(use tag name as selector to bind elements)
+(2).class selector(use a class name to declare some styles, whichever elements wants to use those style can claim on it with a class attribute)
+2 steps to make it happens
+1st step:
+.className{
+	.....
+}
+2nd step:
+<label class="className"></label>
+<label class="className1 className2 className3"></label>
+(3).id selector(use an id to declare some style, and it can only bind with 1 single element)
+2 steps to make it happens
+1st step:
+#idName{
+	.....
+}
+2nd step:
+<label id="idName"></label>
